@@ -19,7 +19,7 @@ func ExampleEncode() {
 	// Output: #0: 00000010
 }
 
-func ExampleEncodeNegative() {
+func ExampleEncode_negative() {
 	i := -500
 	u := ^uint64(i)
 	p := make([]byte, 10)

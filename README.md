@@ -39,9 +39,6 @@ go get github.com/logrusorgru/rukia/encode/long
 cd $GOPATH/github.com/logrusorgru/rukia/encode/long
 go test
 ```
-# Note
-
-This is used in the Rukia
 
 # Licensing
 

@@ -9,7 +9,7 @@ const maxBytesLength = 10
 var (
 	// Both the Encode and the Decode may return this error
 	ErrShortBuffer = errors.New("short buffer")
-	// Only the Decode may return this error if buffer contains bad data
+	// Only the Decode may return this error if the buffer contains bad data
 	ErrTooLong = errors.New("too long")
 )
 
@@ -32,8 +32,8 @@ func nextLoop(u uint64) bool { return u&0xfffffffffffffffe > 0xfe }
 
 func shifted(c uint8, shift uint) uint64 { return uint64(c) << shift }
 
-// Encode uint64 to buffer. It returns number of
-// bytes and error if any. The error can only be ErrShortBuffer
+// Encode uint64 to the buffer. It returns number of
+// bytes and error if any. The error can only be the ErrShortBuffer
 func Encode(u uint64, p []byte) (n int, err error) {
 	// value length at list 1 byte
 	if len(p) < 1 {

@@ -7,9 +7,9 @@ import (
 const maxBytesLength = 10
 
 var (
-	// Both the Encode and the Decode may return this error
+	// ErrShortBuffer describes that a buffer is short
 	ErrShortBuffer = errors.New("short buffer")
-	// Only the Decode may return this error if the buffer contains bad data
+	// ErrTooLong describes that a buffer contains bad data
 	ErrTooLong = errors.New("too long")
 )
 
@@ -41,7 +41,7 @@ func Encode(u uint64, p []byte) (n int, err error) {
 		return
 	}
 	n = 1
-	var c uint8 = 0 // current
+	var c uint8 // current
 	if shouldInverse(u) {
 		u = inverse(u)       // inverse
 		c = uint8(u)         // low byte
@@ -83,7 +83,7 @@ func Encode(u uint64, p []byte) (n int, err error) {
 // Decode decodes buffer and returns uint64, number of bytes,
 // and error if any.
 func Decode(p []byte) (u uint64, n int, err error) {
-	var c uint8 = 0 // current
+	var c uint8 // current
 	if len(p) < 1 {
 		err = ErrShortBuffer
 		return

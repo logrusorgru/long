@@ -54,9 +54,7 @@ func clear(p []byte) {
 	}
 }
 
-var (
-	maxUint64 uint64 = ^uint64(0)
-)
+var maxUint64 = ^uint64(0)
 
 func TestRanges(t *testing.T) {
 	p := make([]byte, 10)

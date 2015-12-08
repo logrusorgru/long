@@ -5,6 +5,7 @@ long
 [![WTFPL License](https://img.shields.io/badge/license-wtfpl-blue.svg)](http://www.wtfpl.net/about/)
 [![Build Status](https://travis-ci.org/logrusorgru/long.svg)](https://travis-ci.org/logrusorgru/long)
 [![Coverage Status](https://coveralls.io/repos/logrusorgru/long/badge.svg?branch=master)](https://coveralls.io/r/logrusorgru/long?branch=master)
+[![GoReportCard](http://goreportcard.com/badge/logrusorgru/long)](http://goreportcard.com/report/logrusorgru/long)
 
 The _long_ is a method of encoding integers. It's similar to
 [varint](https://developers.google.com/protocol-buffers/docs/encoding#varints).

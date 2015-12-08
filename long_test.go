@@ -49,7 +49,7 @@ func isClear(p []byte, n int) bool {
 }
 
 func clear(p []byte) {
-	for i, _ := range p {
+	for i := range p {
 		p[i] = 0
 	}
 }

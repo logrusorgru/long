@@ -36,8 +36,8 @@ On the [paly.golang.org](http://play.golang.org/p/-eNR53vrL5)
 # Get
 
 ```
-go get github.com/logrusorgru/rukia/encode/long
-cd $GOPATH/github.com/logrusorgru/rukia/encode/long
+go get github.com/logrusorgru/long
+cd $GOPATH/github.com/logrusorgru//long
 go test
 ```
 

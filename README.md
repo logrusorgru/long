@@ -37,7 +37,7 @@ On the [paly.golang.org](http://play.golang.org/p/-eNR53vrL5)
 
 ```
 go get github.com/logrusorgru/long
-cd $GOPATH/github.com/logrusorgru//long
+cd $GOPATH/github.com/logrusorgru/long
 go test
 ```
 
